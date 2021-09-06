@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t ojara/docker-react -f Dockerfile.dev
+  - docker build -t docker-react -f Dockerfile.dev
 
 script:
-  - docker run ojara/docker-react npm run test -- --coverage
+  - docker run docker-react npm run test -- --coverage
